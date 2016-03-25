@@ -1,0 +1,2 @@
+this is file1.
+it is a text,just for testing.
