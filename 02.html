@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	#comment{
+		width:960px;
+		border:1px solid #d0e4c2;
+		padding:10px 15px;
+	}
+	#pages{
+		width:990px;
+		margin-top:10px;
+	}
+	#pages a{
+		padding:3px 10px;
+		border:1px solid #ddd;
+		border-radius:5px;
+		margin-right:6px;
+	}
+	#pages a.current{
+		border:0px;
+		/*文本属性*/
+		color:#FF6600;
+	}
+	/*exer2 : start*/
+	#comment p.star{
+		margin:0px;
+		width:75px;
+		height:15px;
+		background-image:url(images/iconlist_1.png);
+		background-position:-124px -238px;
+	}
+	#comment div.line{
+		margin-top:5px;
+		border-bottom:1px solid #d0e4c2;
+	}
+	/**文本内容处理*/
+	#comment p b{
+		margin-left:5px;
+		background:#FDEDD2;
+		padding:3px 8px;
+		/*改文本颜色、加粗效果*/
+		color:#333;
+		font-weight:600;
+	}
+	#comment p.btns input{
+		width:80px;
+		height:40px;
+		border:1px solid #d5d5d5;
+		background-image:linear-gradient(to bottom,#f9f9f9 0%,#cdcdcd 100%);
+	}
+	/*文本属性*/
+	body{
+		color:#9C9A9C;
+		font:12px "microsoft yahei",arial;
+	}
+	#comment p span.darkColor{
+		color:#666;
+	}
+	#comment p.btns{
+		text-align:right;
+	}
+	#pages{
+		text-align:right;
+	}
+	#pages a{
+		color:#005AA0;
+		text-decoration:none;
+	}
+	#pages a:hover{
+		color:#fff;
+		background-color:#005AA0;
+	}
+	#pages a.current:hover{
+		color:#000;
+		background-color:transparent;
+	}
+  </style>
+ </head>
+ <body>
+  <div id="comment">
+	<p class="star"></p>
+	<div class="line"></div>
+	<!-- 文本内容 -->
+	<p>
+		<span>标&nbsp;&nbsp;&nbsp;&nbsp;签:</span>
+		<b>比洗衣粉好</b>
+		<b>去污能力强</b>
+	</p>
+	<p>
+		<span>心&nbsp;&nbsp;&nbsp;&nbsp;得:</span>
+		<span class="darkColor">买了几次了，好用</span>
+	</p>
+	<p>
+		<span>购买日期:</span>
+		<span class="darkColor">2014-12-01</span>
+	</p>
+	<p class="btns">
+		<input type="button" value="有用(3)" />
+		<input type="button" value="回复(3)" />
+	</p>
+  </div>
+  <div id="pages">
+	<a class="current">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">6</a>
+  </div>
+ </body>
+</html>
